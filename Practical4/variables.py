@@ -11,7 +11,8 @@ elif c == f:
 else:
     print("c shorter than f,bus is quicker")
 
-X = True 
-Y = False
-W = X and Y
-print(W)
+
+for X in (True, False) :
+    for Y in (True, False) :
+        W= X and Y
+        print(X,"and",Y,"=",W)
