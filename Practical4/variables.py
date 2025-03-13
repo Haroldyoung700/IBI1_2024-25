@@ -5,11 +5,11 @@ d = 90
 e = 5
 f = d + e
 if c > f:
-    print("c is longer than f,f is quicker")
+    print("c is longer than f,driving is quicker")
 elif c == f:
     print("c is equal to f")
 else:
-    print("c is not longer than f,c is quicker")
+    print("c shorter than f,bus is quicker")
 
 X = True 
 Y = False
