@@ -5,7 +5,10 @@ languages = {
     'Python': 51,
     'SQL': 51,
     'TypeScript': 38.5
-}
+}  
+print("Languages (descending):")
+print([f"{k}: {v}%" for k, v in sorted(languages.items(), key=lambda x: x[1], reverse=True)]) # Print the sorted dictionary of languages
+
 import matplotlib.pyplot as plt # Importing the matplotlib library
 import numpy as np              # Importing the numpy library
 # Creating a bar chart
