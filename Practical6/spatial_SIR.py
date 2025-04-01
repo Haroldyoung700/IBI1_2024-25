@@ -44,4 +44,3 @@ for day in range(1, days+1):
     img.set_data(population)
     plt.title(f"Day {day}")
     plt.pause(0.2)  # pause for 0.2 seconds
-plt.show()
