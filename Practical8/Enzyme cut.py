@@ -26,4 +26,4 @@ def find_restriction_sites(dna_sequence, enzyme_sequence):
 
 dna = "ATGTTGAATAGTTCAAGAAAATATGCTTGTCGTTCCCTATTCAGACAAGCGAACGTCTCA"
 enzyme = "AATATG"
-print(find_restriction_sites(dna, enzyme))  
+print(find_restriction_sites(dna, enzyme))  #output: [6, 30]
