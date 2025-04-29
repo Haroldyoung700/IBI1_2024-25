@@ -51,3 +51,4 @@ def plot_amino_acid_frequencies(seq):
     plt.show()
 
 # ICA first trial
+#commitment
