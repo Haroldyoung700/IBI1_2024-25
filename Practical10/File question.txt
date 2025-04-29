@@ -1,0 +1,3 @@
+My self designed question is to discover the difference of DALYs between different regions in terms of economic development.
+To reach the target, I chose several representative countries for certain regions and compare the mean of the DALYs.
+To reach the target of the designed question, 48-66 rows of command are written to reach for the expectation.
