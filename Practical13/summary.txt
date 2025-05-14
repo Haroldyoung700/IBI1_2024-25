@@ -1,0 +1,32 @@
+P04179 · SODM_HUMAN
+Organism: Homo sapiens
+Subcellular location: mitochondrial
+The amino acid sequence length: 222
+The best alignment’s percentage identity corresponds to the top hit (P09671)
+Blue residues: Fully conserved amino acids (identical in human and mouse SOD2).
+​Grey residues: Similarity substitutions (amino acids with comparable physicochemical properties, e.g., glutamate → aspartate).
+​Biological significance: Blue residues likely indicate critical functional/structural regions, while grey residues tolerate evolutionary variation.
+
+Code Interpretation and Functional Overview
+Sequence Loading & Validation​
+Key Checks:
+Verifies amino acid validity (e.g., rejects sequences with non-standard residues like Z or J).
+Ensures sequence integrity (e.g., no truncation or corruption).
+
+Random Sequence Generation​
+​Function: Creates a negative control sequence with the ​same amino acid composition​ as the human SOD2 sequence but in randomized order.
+​Rationale: Provides a baseline to compare evolutionary conservation (human vs. mouse) against random noise.
+
+Alignment Scoring​
+​Method: Uses the ​BLOSUM62 substitution matrix​ to calculate pairwise alignment scores.
+​Metrics:
+blosum_score: Sum of substitution scores for aligned residues.
+identity_pct: Percentage of identical residues (direct matches).
+alignment_length: Total compared residues (assumes sequences are of equal length).
+​Non-standard Residues: Handles X (unknown) and * (stop codon) with default penalties.
+
+Comparative Analysis​
+​Three Pairwise Comparisons:
+​Human vs. Mouse: Measures evolutionary conservation (expected high identity).
+​Human vs. Random: Tests significance of conservation (random alignment should yield low scores).
+​Mouse vs. Random: Additional negative control.
