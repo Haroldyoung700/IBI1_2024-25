@@ -4,10 +4,10 @@ import os
 import sys
 import random
 
-# Configuration section
-FASTA_DIR = r"/Users/harold_young/Library/Mobile Documents/com~apple~CloudDocs/GitHub/IBI1_2024-25/Practical13"
-HUMAN_FILE = os.path.join(FASTA_DIR, "P04179.fasta")
-MOUSE_FILE = os.path.join(FASTA_DIR, "P09671.fasta")
+os.chdir("Practical13")
+HUMAN_FILE = os.path.join("P04179.fasta")
+MOUSE_FILE = os.path.join("P09671.fasta")
+RANDOM_FILE = os.path.join("random_sequence.fasta")
 
 # Core function
 def load_sequence(filepath):
@@ -29,12 +29,6 @@ def load_sequence(filepath):
     except Exception as e:
         print(f"Error loading {os.path.basename(filepath)}: {str(e)}")
         sys.exit(1)
-
-def generate_random(reference_seq):
-    """Generate random sequence preserving amino acid distribution"""
-    aa_counts = {aa: reference_seq.count(aa) for aa in set(reference_seq)}
-    population = [aa for aa, count in aa_counts.items() for _ in range(count)]
-    return ''.join(random.sample(population, len(population)))
 
 def calculate_alignment(seq1, seq2, matrix):
     """Enhanced alignment scorer with sanity checks"""
@@ -61,15 +55,13 @@ def calculate_alignment(seq1, seq2, matrix):
 
 # Main Workflow
 if __name__ == "__main__":
-    # 1. Load and validate sequences
+    # 1. Load and validate sequences and random sequence
     try:
         human_seq = load_sequence(HUMAN_FILE)
         mouse_seq = load_sequence(MOUSE_FILE)
+        random_seq = load_sequence(RANDOM_FILE)
     except Exception as e:
         sys.exit(1)
-
-    # 2. Generate composition-preserving random sequence
-    random_seq = generate_random(human_seq)
 
     # 3. Load and validate substitution matrix
     try:

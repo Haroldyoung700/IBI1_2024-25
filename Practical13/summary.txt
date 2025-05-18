@@ -31,18 +31,18 @@ Comparative Analysis​
 ​Human vs. Random: Tests significance of conservation (random alignment should yield low scores).
 ​Mouse vs. Random: Additional negative control.
 
-Alignment result：
+=== Alignment Results ===
 Human vs Mouse:
   BLOSUM62 Score: 1097.0
   Percent Identity: 90.09%
   Compared Positions: 222
 
 Human vs Random:
-  BLOSUM62 Score: -227.0
-  Percent Identity: 6.31%
+  BLOSUM62 Score: -243.0
+  Percent Identity: 3.60%
   Compared Positions: 222
 
 Mouse vs Random:
-  BLOSUM62 Score: -227.0
-  Percent Identity: 6.31%
+  BLOSUM62 Score: -226.0
+  Percent Identity: 3.60%
   Compared Positions: 222
