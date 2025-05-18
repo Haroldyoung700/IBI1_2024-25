@@ -1,4 +1,5 @@
 Hello, my name is YANG Haoran.
 I like playing badminton.
 I am enjoying studying IBI1 in person 
+I hope I can pursue my dream of being a scientist
 I am happy that I can push my repo from Visual Studio Code to GitHub
