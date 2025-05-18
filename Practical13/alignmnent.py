@@ -4,12 +4,12 @@ import os
 import sys
 import random
 
-# ================= Configuration Section =================
+# Configuration section
 FASTA_DIR = r"/Users/harold_young/Library/Mobile Documents/com~apple~CloudDocs/GitHub/IBI1_2024-25/Practical13"
 HUMAN_FILE = os.path.join(FASTA_DIR, "P04179.fasta")
 MOUSE_FILE = os.path.join(FASTA_DIR, "P09671.fasta")
 
-# ================= Core Functions =================
+# Core function
 def load_sequence(filepath):
     """Load and validate protein sequence from FASTA"""
     try:
@@ -59,7 +59,7 @@ def calculate_alignment(seq1, seq2, matrix):
         'alignment_length': len(seq1)
     }
 
-# ================= Main Workflow =================
+# Main Workflow
 if __name__ == "__main__":
     # 1. Load and validate sequences
     try:
