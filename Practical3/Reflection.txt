@@ -2,6 +2,6 @@ During this course, I have learnt version control, how to navigate Unix-like sys
 
 I have also learnt to write careful instructions when communicating online!
 
-I am looking forward to learning Python
+I am looking forward to learning Python and being a good bioinformatic engineer
 
 Hello world!
