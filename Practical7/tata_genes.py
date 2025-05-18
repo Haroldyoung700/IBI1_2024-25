@@ -1,4 +1,6 @@
 import re
+import os
+os.chdir("Practical7")
 # This script processes a FASTA file to extract sequences of genes that contain the TATA box pattern.
 def extract_gene_name(header):
     return header.split()[0][1:] 

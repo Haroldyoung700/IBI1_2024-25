@@ -1,4 +1,6 @@
 import re
+import os
+os.chdir("Practical7")
 
 def main():
     # input splice donor/acceptor combination from user
