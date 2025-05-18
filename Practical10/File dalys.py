@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-os.chdir("/Users/harold_young/Documents/GitHub/IBI1_2024-25/Practical10")
+os.chdir("Practical10")
 dalys_data = pd.read_csv("dalys-rate-from-all-causes.csv")
 
 
@@ -18,7 +18,7 @@ print("Data column name：", dalys_data.columns.tolist())
 # Filter the data for 1990
 mask_1990 = dalys_data['Year'] == 1990
 dalys_1990 = dalys_data.loc[mask_1990, ['Entity', 'DALYs']]  
-print("\n1990 data：\n", dalys_1990.head())
+print("\n1990 data：\n", dalys_1990)
 
 
 # Task2: Calculate the mean of uk and france and conduct the comparison 
@@ -31,6 +31,8 @@ print(f"\nUK mean DALYs：{mean_uk:.2f}")
 print(f"France mean DALYs：{mean_france:.2f}")
 print("UK mean" + (" higher than " if mean_uk > mean_france else " lower than ") + "France")
 
+#comment:UK mean higher than France
+
 
 # Task3: print a plot describing the trend of uk data
 # Plot the figure
@@ -39,6 +41,7 @@ plt.plot(uk_data['Year'], uk_data['DALYs'], label='United Kingdom')
 plt.title('DALYs Over Time in the UK')
 plt.xlabel('Year')
 plt.ylabel('DALYs')
+plt.xticks(uk_data['Year'], rotation=-60)
 plt.legend()
 plt.tight_layout()   
 plt.show()           
