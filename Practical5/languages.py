@@ -10,11 +10,13 @@ print("Languages (descending):")
 print([f"{k}: {v}%" for k, v in sorted(languages.items(), key=lambda x: x[1], reverse=True)]) # Print the sorted dictionary of languages
 
 import matplotlib.pyplot as plt # Importing the matplotlib library
-import numpy as np              # Importing the numpy library
 # Creating a bar chart
-x = np.array(['JavaScript', 'HTML', 'Python', 'SQL', 'TypeScript'])
-y = np.array([62.3, 52.9, 51, 51, 38.5])
+x = languages.keys()
+y = languages.values()
 plt.bar(x, y)
+plt.xlabel("Programming languages")
+plt.ylabel("Popularity(%)") 
+plt.title("Study of programming language popularity")
 plt.show()          # Displaying the bar chart
 #Close the bar image to continue
 # Requested language 
