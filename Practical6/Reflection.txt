@@ -1,0 +1,4 @@
+The practical is interesting though the difficulties exist. 
+Solving the problems and learning new things about simulating the public health welfare model is challenging and exciting.
+Instead of copying the snippets given, I try to write the code by myself. It works!
+I hope I can learn more in IBI course.

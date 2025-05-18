@@ -29,15 +29,15 @@ for day in range(1, days+1):
     for i in range(100):
         for j in range(100):
             if population[i, j] == 1:
-                # decide if the infectee recovers
-                if np.random.rand() < gamma:
-                    new_pop[i, j] = 2
                 # infect the susceptible neighbors
                 for dx in [-1, 0, 1]:
                     for dy in [-1, 0, 1]:
                         if 0 <= i+dx < 100 and 0 <= j+dy < 100:
                             if population[i+dx, j+dy] == 0 and np.random.rand() < beta:
                                 new_pop[i+dx, j+dy] = 1
+                # decide if the infectee recovers
+                if np.random.rand() < gamma:
+                    new_pop[i, j] = 2
     # update the population grid
     population = new_pop
     # update the plot
